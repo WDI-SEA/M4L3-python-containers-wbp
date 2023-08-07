@@ -14,7 +14,8 @@ def add_contact(address_book):
 
 def delete_contact(address_book):
     print("\nDeleting one or more contacts\n")
-    partial = input("Enter a part of their name: ")
+    partial = input("Enter a part of their name: ").lower()
+    print(f"Deleting contacts with name matching {partial}")
     return (
         contact
         for contact in address_book
