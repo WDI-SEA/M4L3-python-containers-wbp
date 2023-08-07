@@ -24,8 +24,9 @@ def delete_contact(addressbook):
 
   idx = None
   for i in range(len(addressbook)):
-    if pattern in addressbook[i]['name'] and addressbook[i]['name'].index(pattern) >= 0:
+    if pattern in addressbook[i]['name']:
       idx = i
+      break
 
   if idx == None:
     print('\nContact Not found!\n');
