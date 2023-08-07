@@ -25,7 +25,7 @@ def main(address_book):
             case "2":
                 contacts.contacts.add_contact(address_book)
             case "3":
-                address_book = contacts.contacts.delete_contact(address_book)
+                contacts.contacts.delete_contact(address_book)
             case "4":
                 print("Goodbye!")
             case "5":
