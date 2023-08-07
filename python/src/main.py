@@ -10,6 +10,7 @@ def menu():
   print('[2] Add a new contact')
   print('[3] Delete a contact')
   print('[4] Exit')
+  
 def main():
   run = True
   def quit(addressbook): 
