@@ -1,36 +1,35 @@
 def show_contacts(addressbook):
   print();
   for contact in addressbook:
-    print(f'{contact.name} ({contact.email}): {contact.phone}');
-  print();
+    print(f'{contact.name} ({contact.email}): {contact.phone}')
+  print()
 
 def add_contact(addressbook):
-  name = input('Enter name: ').strip();
-  phone = input('Enter phone: ').strip();
-  email = input('Enter email: ').strip();
+  name = input('Enter name: ').strip()
+  phone = input('Enter phone: ').strip()
+  email = input('Enter email: ').strip()
  
-  newContact = {
-    name: name,
-    phone: phone,
-    email: email,
+  new_contact = {
+    "name": name,
+    "phone": phone,
+    "email": email,
   }
-  addressbook.push(newContact);
+  addressbook.append(new_contact)
 
   print(f'\n{name} was added.\n')
 
 def delete_contact(addressbook):
-  pattern = input('Enter a part of their name: ').strip();
+  pattern = input('Enter a part of their name: ').strip()
 
-  idx = None;
-  for i in addressbook.len():
-    if (addressbook[i]['name'].list.index(pattern)>=0):
-      idx =i;
+  idx = None
+  for i in range(len(addressbook)):
+    if pattern in addressbook[i]['name']:
+      idx =i
 
-  if (idx ==None):
-    print('\nContact Not Found\n')
+  if idx == None:
+    print('\nContact Not found!\n')
     return;
 
-  deletedName = addressbook[idx]['name'];
-  addressbook.pop(idx,1);
+  deletedName = addressbook.pop(idx,1)
 
   print(f'\n {deletedName} was deleted.\n')

@@ -18,19 +18,13 @@ def main():
     menu()
     selection = int(input('Enter a selection: '))
   
-    switch = {
-      1: lambda addressbook: contacts.showContacts(addressbook); break,
-      2: lambda addressbook: contacts.addContact(addressbook);    break,
-      3: lambda addressbook: contacts.deleteContact(addressbook); break,
-      4: lambda addressbook: quit()
-    
-     
-    if selection in match:
-    match[selection]()
-      _: lambda addressbook: print('That selection is not valid, please try again!');
-    
-
-
+    match selection:
+      case 1: contacts.show_contacts(addressbook)
+      case 2: contacts.add_contact(addressbook)
+      case 3: contacts.delete_contact(addressbook)
+      case 4: run = False
+      case _: print('\nThat selection is not valid, please try again!\n')
+  
   print('Goodbye')
       
 
