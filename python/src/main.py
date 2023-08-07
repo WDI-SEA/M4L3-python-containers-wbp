@@ -1,7 +1,3 @@
-# //https://github.com/heapwolf/prompt-sync
-promptSync = require('prompt-sync');
-prompt = promptSync({ sigint: true });
-
 import contacts
 
 addressbook = [
@@ -17,7 +13,19 @@ def menu():
   print('[4] Exit');
 
 def main():
+  run == True;
+  while run:
+    menu();
+    selection = int(input('Enter a selection: '));
   
-  pass
+    match selection:
+      case 1: contacts.showContacts(addressbook); break;
+      case 2: contacts.addContact(addressbook);    break;
+      case 3: contacts.deleteContact(addressbook); break;
+      case 4: run == False; break;
+      case _: print('That selection is not valid, please try again!');
+
+  print('Goodbye')
+      
 
 main()
