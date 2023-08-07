@@ -30,6 +30,7 @@ def main(address_book):
                 print("Goodbye!")
             case _:
                 print("That selection is not valid, please try again!")
+        print("")
 
 
 main(address_book)
