@@ -16,7 +16,7 @@ function addContact(addressbook) {
 
   const newContact = {
     name: name,
-    phone: phone,
+    phoncone: phone,
     email: email
   };
   addressbook.push(newContact);
