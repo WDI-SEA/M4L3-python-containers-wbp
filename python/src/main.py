@@ -28,6 +28,8 @@ def main(address_book):
                 address_book = contacts.contacts.delete_contact(address_book)
             case "4":
                 print("Goodbye!")
+            case "5":
+                contacts.contacts.delete_proper(address_book)
             case _:
                 print("That selection is not valid, please try again!")
         print("")
