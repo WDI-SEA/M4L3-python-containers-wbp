@@ -13,7 +13,7 @@ def menu():
   print('[4] Exit');
 
 def main():
-  run == True;
+  run = True;
   while run:
     menu();
     selection = int(input('Enter a selection: '));
@@ -22,7 +22,7 @@ def main():
       case 1: contacts.showContacts(addressbook); break;
       case 2: contacts.addContact(addressbook);    break;
       case 3: contacts.deleteContact(addressbook); break;
-      case 4: run == False; break;
+      case 4: run = False; break;
       case _: print('That selection is not valid, please try again!');
 
   print('Goodbye')

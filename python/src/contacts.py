@@ -5,9 +5,9 @@ def show_contacts(addressbook):
   print();
 
 def add_contact(addressbook):
-  name = prompt('Enter name: ').strip();
-  phone = prompt('Enter phone: ').strip();
-  email = prompt('Enter email: ').strip();
+  name = input('Enter name: ').strip();
+  phone = input('Enter phone: ').strip();
+  email = input('Enter email: ').strip();
  
   newContact = {
     name: name,
@@ -19,7 +19,7 @@ def add_contact(addressbook):
   print(f'\n{name} was added.\n')
 
 def delete_contact(addressbook):
-  pattern = prompt('Enter a part of their name: ').strip();
+  pattern = input('Enter a part of their name: ').strip();
 
   idx = None;
   for i in addressbook.len():
