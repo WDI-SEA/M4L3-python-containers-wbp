@@ -20,4 +20,18 @@ def add_contact(addressbook):
   print(f"\n{name} was added.\n")
 
 def delete_contact(addressbook):
-  pass
+  pattern = prompt("Enter a part of their name: ").strip()
+  idx = null
+
+  for i in range(0, len(addressbook)):
+    if addressbook[i]['name'].index(pattern) >= 0:
+      idx = i
+
+  if idx == null:
+    print("\nContact not found!\n")
+    return
+
+  deleted_name = addressbook[idx]['name']
+  addressbook.remove(idx)
+
+  console.log(f"\n{deleted_name} was deleted.")
