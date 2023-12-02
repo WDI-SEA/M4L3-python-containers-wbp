@@ -1,7 +1,7 @@
 def show_contacts(addressbook):
   print()
   for contact in addressbook:
-    print(f"{contact['name']} ({contact['email']}): ${contact['phone']}")
+    print(f"{contact['name']} ({contact['email']}): {contact['phone']}")
   print()
 
 def add_contact(addressbook):
@@ -28,10 +28,10 @@ def delete_contact(addressbook):
       idx = i
 
   if idx == None:
-    print("\nContact not found!\n")
+    print("\nContact Not found!\n")
     return
 
   deleted_name = addressbook[idx]['name']
   addressbook.remove(addressbook[idx])
 
-  print(f"\n{deleted_name} was deleted.")
+  print(f"\n{deleted_name} was deleted.\n")

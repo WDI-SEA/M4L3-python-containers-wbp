@@ -27,6 +27,6 @@ def main():
       run = False
     else:
       print("\nThat selection is not valid, please try again!\n")
-  print("Goodbye!")
+  print("\nGoodbye!\n")
 
 main()
