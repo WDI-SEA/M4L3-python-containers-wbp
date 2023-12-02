@@ -16,7 +16,7 @@ def main():
   run = True
   while run:
     menu()
-    selection = input("Enter a selection: ")
+    selection = int(input("Enter a selection: "))
     if selection == 1:
       contacts.show_contacts(addressbook)
     elif selection == 2:
@@ -28,5 +28,5 @@ def main():
     else:
       print("\nThat selection is not valid, please try again!\n")
   print("Goodbye!")
-  
+
 main()
