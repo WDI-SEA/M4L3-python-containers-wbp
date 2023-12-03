@@ -22,8 +22,8 @@ def main():
       case 2: contacts.add_contact(addressbook)
       case 3: contacts.delete_contact(addressbook)
       case 4: run = False
-      case _:  print('That selection is not valid, please try again!')
-  print('Goodbye!')
+      case _: print(f'\nThat selection is not valid, please try again!\n')
+  print(f'\nGoodbye!\n')
 
 
 main()

@@ -14,26 +14,30 @@ def add_contact(addressbook):
   addressbook.append(newContact)
   print(f'{name} was added.')
 
+# def delete_contact(addressbook):
+#   pattern = input('Enter a part of their name: ').strip().lower()
+#   for contact in addressbook:
+#     if pattern in contact['name'].lower():
+#       addressbook.remove(contact)
+#       print(f'{contact["name"]} was deleted.')
+#     else:
+#       print('Contact Not found!')
+
+
 def delete_contact(addressbook):
   pattern = input('Enter a part of their name: ').strip().lower()
-  for contact in addressbook:
-    if pattern in contact['name'].lower():
-      addressbook.remove(contact)
-      print(f'{contact["name"]} was deleted.')
-    else:
-      print('Contact Not found!')
-
-
-  # #   if pattern in contact['name'].lower():
-  # #     addressbook.remove(contact)
-  # #     print(f'{contact["name"]} was deleted.')
-  #   if pattern not in contact['name'].lower():
-  #     print('Contact Not found!')
-  #   else:
-  #     addressbook.remove(contact)
-  #     print(f'{contact["name"]} was deleted.')
-
-
+  idx = None
+  for i in range(len(addressbook)):
+    if pattern in addressbook[i]['name'].lower():
+      idx = i
+  
+  if idx is None:
+    print('Contact Not found!')
+    return
+  
+  deleted_name = addressbook[idx]['name']
+  del addressbook[idx]
+  print(f'{deleted_name} was deleted.')
 
 
 
