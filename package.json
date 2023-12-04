@@ -1,0 +1,26 @@
+{
+  "name": "m4l3-python-containers-wbp",
+  "version": "1.0.0",
+  "description": "for homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lvlivingston/M4L3-python-containers-wbp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lvlivingston/M4L3-python-containers-wbp/issues"
+  },
+  "homepage": "https://github.com/lvlivingston/M4L3-python-containers-wbp#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "prompt": "^1.3.0",
+    "sync": "^0.2.5"
+  }
+}
