@@ -27,11 +27,11 @@ def delete_contact(addressbook):
       idx = int(i)
   
   if idx == '':
-    print("\nContact Not Found!\n")
+    print("\nContact Not found!\n")
     return
   
   deleted_name = addressbook[idx]['name']
   del addressbook[idx]
 
-  print(f"\n{deleted_name} was deleted from address book list position {idx}.\n")
+  print(f"\n{deleted_name} was deleted.\n")
     
