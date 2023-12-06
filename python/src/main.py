@@ -18,20 +18,20 @@ def main():
     menu()
     selection = int(input('Enter a selection: '))
     if selection == 1:
-      print('\nYou have selected option 1\n')
-      #contacts.showContacts(addressbook)
-      # break
+      # print('\nYou have selected option 1\n')
+      contacts.show_contacts(addressbook)
+      break
     elif selection == 2:
-      print('\nYou have selected option 2\n')
-      #contacts.addContact(addressbook)
-      # break
+      # print('\nYou have selected option 2\n')
+      contacts.add_contact(addressbook)
+      break
     elif selection == 3:
-      print('\nYou have selected option 3\n')
-      #contacts.deleteContact(addressbook)
-      # break
+      # print('\nYou have selected option 3\n')
+      contacts.delete_contact(addressbook)
+      break
     elif selection == 4:
       run = False
-      # break
+      break
     else:
       print('\nThat selection is not valid, please try again!\n')
 
