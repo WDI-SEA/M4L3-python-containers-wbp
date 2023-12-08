@@ -20,6 +20,9 @@ def add_contact(addressbook):
 
 def delete_contact(addressbook):
   pattern = input('Enter a part of their name: ').strip()
-  idx = None
-  for address in range(len(addressbook)):
-    print('ay')
+  for i, contact in enumerate(addressbook):
+    if pattern.lower() in contact["name"].lower():
+      print(f'{contact["name"]} has been deleted.')
+      addressbook.pop(i)
+      return
+  print('Contact not found')
