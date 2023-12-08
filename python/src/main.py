@@ -21,7 +21,6 @@ def main():
     match selection:
       case 1:
         contacts.show_contacts(addressbook)
-        
       case 2:
         contacts.add_contact(addressbook)
       case 3:
