@@ -1,7 +1,8 @@
 def show_contacts(addressbook):
+  print()
   for contact in addressbook:
     print(f'{contact["name"]} ({contact["email"]}): {contact["phone"]}')
-
+  print()
 
 def add_contact(addressbook):
   name  = input('Enter name: ').strip()
